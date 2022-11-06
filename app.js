@@ -1,39 +1,47 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-const hbs = require("express-handlebars");
-
-var indexRouter = require("./routes/index");
-var singleProductRouter = require("./routes/single_product");
-var contactRouter = require("./routes/contact");
-var usersRouter = require("./routes/users");
-
+import  createError from "http-errors"
+import express from "express"
+import path from "path"
+import cookieParser from "cookie-parser"
+import logger from "morgan"
+import hbs from "express-handlebars"
+import indexRouter from "./routes/index.js"
+import singleProductRouter from "./routes/single_product.js"
+import contactRouter from "./routes/contact.js"
+import { dirname } from 'path';
+import main_constant from "./helpers/constants/main_constant.js"
+function getPath(dir){
+  if(dir){
+    return path.resolve(dirname(`./`),`${dir}`)
+  }else path.resolve(dirname(`./`),``)
+}
 var app = express();
 app.engine(
   "hbs",
   hbs.engine({
     extname: "hbs",
     defaultLayout: "main",
-    layoutDir: path.join(__dirname + "/views/layouts"),
-    partialsDir: path.join(__dirname + "/views/partials"),
+    layoutDir: path.join(getPath("views/layouts")),
+    partialsDir: path.join(getPath("views/partials")),
+    helpers:{
+      getPhoneUrl(){
+        return `tel:${main_constant.phone}`
+      }
+    }
   })
 );
-app.set("views", path.join(__dirname, "views"));
+app.set("views",getPath("views"));
 app.set("view engine", "hbs");
 
-app.use(logger("dev"));
+// app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(getPath("public")));
 
 app.use("/", indexRouter);
 app.use("/index", indexRouter);
 app.use("/single-product", singleProductRouter);
 app.use("/contact", contactRouter);
-app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -54,4 +62,4 @@ const PORT = 3131 || process.env.PORT;
 app.listen(PORT, () => {
   console.log("running on http://localhost:" + PORT);
 });
-module.exports = app;
+export default app;

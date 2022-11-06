@@ -4,22 +4,22 @@
     <div
       class="categrie-product-activation-2 categorie-product-two slick-layout-wrapper--15"
     >
-    {{#each categories_constants}}
-      <div class="slick-single-layout slick-slide">
-        <div class="categrie-product-2">
-          <a href="#">
-            <img
-              class="img-fluid"
-              src="{{this.image}}"
-              alt="product categorie"
-            />
-            <h6 class="cat-title">{{this.title}}</h6>
-          </a>
+      {{#each categories_constants}}
+        <div class="slick-single-layout slick-slide">
+          <div class="categrie-product-2">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="{{this.image}}"
+                alt="product categorie"
+              />
+              <h6 class="cat-title">{{this.title}}</h6>
+            </a>
+          </div>
+          <!-- End .categrie-product -->
         </div>
-        <!-- End .categrie-product -->
-      </div>
-    
-    {{/each}}
+
+      {{/each}}
 
     </div>
   </div>
@@ -35,13 +35,14 @@
           <div class="single-slide slick-slide">
             <div class="main-slider-content">
               <span class="subtitle"><i class="fas fa-fire"></i>
-                Hot Deal In This Week</span>
+                Ən popular</span>
               <h1 class="title">{{this.title}}</h1>
               <div class="shop-btn">
-                <a href="shop" class="axil-btn btn-bg-white"><i
+                <a href="shop" class="axil-btn btn-bg-white">
+                  {{! <i
                     class="fal fa-shopping-cart"
-                  ></i>
-                  Shop Now</a>
+                  ></i> }}
+                  Detallar</a>
               </div>
             </div>
             <div class="main-slider-thumb">
@@ -407,331 +408,56 @@
 
       <div class="section-title-wrapper">
         <span class="title-highlighter highlighter-secondary"><i
-            class="far fa-shopping-basket"
-          ></i>This Month</span>
-        <h2 class="title">Best Sellers</h2>
+            class="fa fa-car"
+          ></i>Bu ay</span>
+        <h2 class="title">Ən popuylar maşınlarımız</h2>
       </div>
       <div class="row">
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
+
+        {{#each products}}
+
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="axil-product product-style-seven">
+              <div class="product-content">
+                <div class="cart-btn">
+                  <a href="{{getPhoneUrl}}">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                </div>
+                <div class="inner">
+                  <h5 class="title"><a href="/single-product/{{slug}}">{{name}}</a></h5>
+                  <div class="product-price-variant">
+                    <span class="price current-price">{{price}}AZN</span>
+                    {{!-- <span class="price old-price">$49.99</span> --}}
+                  </div>
+                  <div class="product-rating">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="rating-number">(64)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <a href="/single-product/{{slug}}">
+                  <img
+                    data-sal="zoom-out"
+                    data-sal-delay="100"
+                    data-sal-duration="800"
+                    loading="lazy"
+                    src="{{this.mainImageId}}"
+                    alt="Product Images"
+                  />
                 </a>
               </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Neon Sofa Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(64)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-19.png"
-                  alt="Product Images"
-                />
-              </a>
             </div>
           </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Wooden Arm Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(18)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-22.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Royal Wooden Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(87)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-23.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Vintage Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(11)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-25.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Neon Sofa Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(05)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-20.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Wooden Arm Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(34)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-21.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Royal Wooden Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(14)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-18.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="axil-product product-style-seven">
-            <div class="product-content">
-              <div class="cart-btn">
-                <a href="cart">
-                  <i class="flaticon-shopping-cart"></i>
-                </a>
-              </div>
-              <div class="inner">
-                <h5 class="title"><a href="single-product">Vintage Chair</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">$29.99</span>
-                  <span class="price old-price">$49.99</span>
-                </div>
-                <div class="product-rating">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span class="rating-number">(24)</span>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail">
-              <a href="single-product">
-                <img
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="800"
-                  loading="lazy"
-                  src="assets/images/product/furniture/product-24.png"
-                  alt="Product Images"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+        {{/each}}
+
       </div>
     </div>
   </div>
@@ -744,42 +470,33 @@
         <div class="section-title-wrapper">
           <span class="title-highlighter highlighter-primary2"><i
               class="fal fa-star"
-            ></i>About Us</span>
-          <h2 class="title">Who we are</h2>
+            ></i>Haqqımızda</span>
+          <h2 class="title">Biz kimik?</h2>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <div class="about-features">
               <div class="spam sl-number">1.</div>
-              <h4 class="title">Who We Are</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, saepe.</p>
+              <h4 class="title">Biz kimik</h4>
+              <p>ASI Rent A Car 2020 ci ildən etibarən avtomobil icarəsi xidmətini göstərən və bu illər ərzində müştərilərini həmişə razı saxlayan bir şirkətdir</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="about-features">
               <div class="spam sl-number">2.</div>
-              <h4 class="title">What Do We Do</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, saepe.</p>
+              <h4 class="title">Xidmətlərimiz</h4>
+              <p>Biz sizi rahat,lazımsız sual və öhdəliksiz bir səyahət ilə təmin edirik. Yeni, rahat və tam sığortalı avtomobil icarə etmək istəyirsiniz?ASI Rent A Car size gözləyir. Bizim müştərilərimizdən gələn onlarla xoş rəylər bizim işimiz haqqında sizə əlavə informasiya verməkdə kömək olacaq.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="about-features">
               <div class="spam sl-number">3.</div>
-              <h4 class="title">How Do We Help</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, saepe.</p>
+              <h4 class="title">Onlayn sifariş</h4>
+              <p>Biz sizin vaxtınıza qənaət edəcək və sizə lazım olan avtomobili seçməkdə köməkçi ola biləcək
+çox rahat onlayn sifariş sistemini tədbiq etdik. Cəmi bir neçə addıma rahatlıqla seçiminizi edin </p>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="about-features">
-              <div class="spam sl-number">4.</div>
-              <h4 class="title">Create success story</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, saepe.</p>
-            </div>
-          </div>
+         
         </div>
       </div>
       <div class="col-lg-5">
