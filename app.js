@@ -11,8 +11,6 @@ var contactRouter = require("./routes/contact");
 var usersRouter = require("./routes/users");
 
 var app = express();
-console.log(__dirname + "/views/partials")
-console.log(path.join(__dirname + "/views/partials"))
 app.engine(
   "hbs",
   hbs.engine({
