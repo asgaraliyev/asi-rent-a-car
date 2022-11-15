@@ -9,7 +9,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-sm-6 col-12">
                         <div class="header-top-dropdown">
-                            <div class="dropdown">
+                            {{!-- <div class="dropdown">
                                 <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     English
                                 </button>
@@ -28,7 +28,7 @@
                                     <li><a class="dropdown-item" href="#">AUD</a></li>
                                     <li><a class="dropdown-item" href="#">EUR</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-12">
@@ -50,10 +50,10 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="/index" class="logo logo-dark">
-                            <img src="/assets/images/logo/logo.png" alt="Site Logo">
+                            <img src="{{getLogo}}" alt="Site Logo">
                         </a>
                         <a href="/index" class="logo logo-light">
-                            <img src="/assets/images/logo/logo-light.png" alt="Site Logo">
+                            <img src="{{getLogo}}" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
@@ -62,7 +62,7 @@
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
                             <div class="mobile-nav-brand">
                                 <a href="index" class="logo">
-                                    <img src="/assets/images/logo/logo.png" alt="Site Logo">
+                                    <img src="{{getLogo}}" alt="Site Logo">
                                 </a>
                             </div>
                             <ul class="mainmenu">
@@ -194,12 +194,12 @@
                         <div class="header-campaign-activation axil-slick-arrow arrow-both-side header-campaign-arrow">
                             <div class="slick-slide">
                                 <div class="campaign-content">
-                                    <p>1 Aylıq BMW M5 30% endirim  <a href="#">Əldə et</a></p>
+                                    <p>1 Aylıq BMW M5 30% endirim  <a href="{{getPhoneUrl}}">Əldə et</a></p>
                                 </div>
                             </div>
                             <div class="slick-slide">
                                 <div class="campaign-content">
-                                    <p>1 Aylıq Hundai Elentra 50% endirim <a href="#">Əldə et</a></p>
+                                    <p>1 Aylıq Hundai Elentra 50% endirim <a href="{{getPhoneUrl}}">Əldə et</a></p>
                                 </div>
                             </div>
                         </div>

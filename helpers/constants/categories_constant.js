@@ -1,94 +1,15 @@
 export default [
   {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
+    title: "Ekonom klass",
   },
   {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
+    title: "Biznes klass",
   },
   {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
+    title: "Yolsuzluq maşınları",
   },
   {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
+    title: "VİP klass",
   },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
-  {
-    title: "Title",
-    image: "./assets/images/product/categories/furni-9.png",
-  },
+ 
 ];

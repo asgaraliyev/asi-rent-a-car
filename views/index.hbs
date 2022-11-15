@@ -8,11 +8,13 @@
         <div class="slick-single-layout slick-slide">
           <div class="categrie-product-2">
             <a href="#">
+              {{#if this.image}}
               <img
                 class="img-fluid"
                 src="{{this.image}}"
                 alt="product categorie"
               />
+              {{/if}}
               <h6 class="cat-title">{{this.title}}</h6>
             </a>
           </div>
@@ -34,15 +36,14 @@
         {{#each home_slider_constants}}
           <div class="single-slide slick-slide">
             <div class="main-slider-content">
-              <span class="subtitle"><i class="fas fa-fire"></i>
-                Ən popular</span>
-              <h1 class="title">{{this.title}}</h1>
+              <span class="subtitle"><i class="fas fa-fire"></i> </span>
+              <h2 class="title">{{this.title}}</h2>
               <div class="shop-btn">
-                <a href="shop" class="axil-btn btn-bg-white">
+                <a href="{{getPhoneUrl}}" class="axil-btn btn-bg-white">
                   {{! <i
                     class="fal fa-shopping-cart"
                   ></i> }}
-                  Detallar</a>
+                  Detaylı</a>
               </div>
             </div>
             <div class="main-slider-thumb">
@@ -58,7 +59,7 @@
 <!-- End Slider Area -->
 
 <!-- Start Flash Sale Area  -->
-<div
+{{!-- <div
   class="axil-new-arrivals-product-area fullwidth-container flash-sale-area bg-color-white axil-section-gap pb--0"
 >
   <div class="container ml--xxl-0">
@@ -399,7 +400,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End Flash Sale Area  -->
 
 <div class="axil-product-area axil-section-gap pb--0">
@@ -438,7 +439,7 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                     </span>
-                    <span class="rating-number">(64)</span>
+                    {{!-- <span class="rating-number">(64)</span> --}}
                   </div>
                 </div>
               </div>
@@ -504,18 +505,18 @@
           <div class="row row--10">
             <div class="col-6">
               <div class="thumbnail thumbnail-1">
-                <img src="assets/images/about/about-04.png" alt="About" />
+                <img src="assets/images/about/about-1.png" alt="About" />
               </div>
               <div class="thumbnail thumbnail-2">
-                <img src="assets/images/about/about-06.png" alt="About" />
+                <img src="assets/images/about/about-2.png" alt="About" />
               </div>
             </div>
             <div class="col-6">
               <div class="thumbnail thumbnail-3">
-                <img src="assets/images/about/about-05.png" alt="About" />
+                <img src="assets/images/about/about-6.png" alt="About" />
               </div>
               <div class="thumbnail thumbnail-4">
-                <img src="assets/images/about/about-07.png" alt="About" />
+                <img src="assets/images/about/about-4.png" alt="About" />
               </div>
             </div>
           </div>
@@ -526,7 +527,7 @@
 </div>
 
 <!-- Start Best Sellers Product Area  -->
-<div
+{{!-- <div
   class="axil-best-seller-product-area bg-color-white axil-section-gap pb--50 pb_sm--30"
 >
   <div class="container">
@@ -971,11 +972,11 @@
       <!-- End .slick-single-layout -->
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End  Best Sellers Product Area  -->
 
 <!-- Poster Countdown Area  -->
-<div class="axil-poster-countdown">
+{{!-- <div class="axil-poster-countdown">
   <div class="container">
     <div class="poster-countdown-wrap bg-lighter">
       <div class="row">
@@ -1005,11 +1006,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End Poster Countdown Area  -->
 
 <!-- Start Expolre Product Area  -->
-<div class="axil-product-area bg-color-white axil-section-gap pb--0">
+{{!-- <div class="axil-product-area bg-color-white axil-section-gap pb--0">
   <div class="container">
     <div class="product-area pb--80">
       <div class="section-title-wrapper">
@@ -1866,11 +1867,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End Expolre Product Area  -->
 
 <!-- Start Why Choose Area  -->
-<div class="axil-why-choose-area axil-section-gap pb--50 pb_sm--30">
+{{!-- <div class="axil-why-choose-area axil-section-gap pb--50 pb_sm--30">
   <div class="container">
     <div class="section-title-wrapper section-title-center">
       <span class="title-highlighter highlighter-secondary"><i
@@ -1923,11 +1924,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End Why Choose Area  -->
 
 <!-- Start Testimonila Area  -->
-<div class="axil-testimoial-area axil-section-gap bg-vista-white">
+{{!-- <div class="axil-testimoial-area axil-section-gap bg-vista-white">
   <div class="container">
     <div class="section-title-wrapper">
       <span class="title-highlighter highlighter-secondary">
@@ -2025,11 +2026,11 @@
 
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End Testimonila Area  -->
 
 <!-- Start New Arrivals Product Area  -->
-<div
+{{!-- <div
   class="axil-new-arrivals-product-area bg-color-white axil-section-gap pb--50 pb_sm--30"
 >
   <div class="container">
@@ -2501,31 +2502,10 @@
       <!-- End .slick-single-layout -->
     </div>
   </div>
-</div>
+</div> --}}
 <!-- End New Arrivals Product Area  -->
 
-<!-- Start Axil Newsletter Area  -->
-<div class="axil-newsletter-area axil-section-gap pt--0">
-  <div class="container">
-    <div class="etrade-newsletter-wrapper bg_image bg_image--6">
-      <div class="newsletter-content">
-        <span class="title-highlighter highlighter-primary2"><i
-            class="fas fa-envelope-open"
-          ></i>Newsletter</span>
-        <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
-        <div class="input-group newsletter-form">
-          <div class="position-relative newsletter-inner mb--15">
-            <input placeholder="example@gmail.com" type="text" />
-          </div>
-          <button type="submit" class="axil-btn mb--15">Subscribe</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End .container -->
-</div>
-<!-- End Axil Newsletter Area  -->
-
+{{!-- 
 <div class="service-area">
   <div class="container">
     <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
@@ -2575,4 +2555,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}

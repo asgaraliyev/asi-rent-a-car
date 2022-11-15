@@ -1,3 +1,4 @@
+
 (function(window, document, $, undefined) {
     'use strict';
 
@@ -770,7 +771,8 @@
 
             $('.slider-activation-two').slick({
                 infinite: true,
-                autoplay: false,
+                autoplay: true,
+                speed: 1000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
@@ -987,5 +989,15 @@
         },
     }
     axilInit.i();
-
+    const contactForm=document.querySelector("#contact-form")
+    if(contactForm)contactForm.addEventListener("submit",async function(e){
+        e.preventDefault()
+        const data={
+            name:e.target.name.value.trim(),
+            phone:e.target.phone.value.trim(),
+            message:e.target.message.value.trim(),
+        }
+        const rawResponse = await fetch(main_constant.api_url+`/new-request?data=${JSON.stringify(data)}`);
+        console.log(rawResponse)
+    })
 })(window, document, jQuery);

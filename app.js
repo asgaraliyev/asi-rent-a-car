@@ -25,6 +25,12 @@ app.engine(
     helpers:{
       getPhoneUrl(){
         return `tel:${main_constant.phone}`
+      },
+      getLogo(){
+        return main_constant.logo
+      },
+      getMain(){
+        return JSON.stringify(main_constant)
       }
     }
   })

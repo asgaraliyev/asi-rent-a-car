@@ -20,3 +20,20 @@
 
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
+    <script>
+        String.prototype.replaceAll=function(target,str){
+            function _replace(res,target,newStr=""){
+                if(res.includes(target)){
+                    res=res.replace(target,newStr)
+                    return _replace(res,target,newStr)
+                }else{
+                    return res
+                }
+            }   
+            return _replace(this,target,str)
+
+        }
+        
+        window.main_constant=`{{getMain}}`.replaceAll("&quot;",`"`)
+        window.main_constant=JSON.parse(window.main_constant)
+    </script>

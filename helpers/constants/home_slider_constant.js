@@ -1,15 +1,15 @@
 export default [
     {
-        image:"/assets/images/product/product-47.png",
-        title:"BMW X5",
+        image:"/assets/images/product/slider-2.png",
+        title:"Avtomobil lazımdır?",
     },
     {
-        image:"/assets/images/product/product-47.png",
-        title:"BMW X7",
+        image:"/assets/images/product/kortec.png",
+        title:"Toy korteclərinin təşkili",
     },
     {
-        image:"/assets/images/product/product-47.png",
-        title:"Title",
-    }
+        image:"/assets/images/product/slider-1.png",
+        title:"40 AZN-dən başlayan qiymətlərlə",
+    },
     
 ]
