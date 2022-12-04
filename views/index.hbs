@@ -4,18 +4,18 @@
     <div
       class="categrie-product-activation-2 categorie-product-two slick-layout-wrapper--15"
     >
-      {{#each categories_constants}}
+      {{#each getCategories}}
         <div class="slick-single-layout slick-slide">
           <div class="categrie-product-2">
-            <a href="#">
+            <a href="/products?type={{this.slug}}">
               {{#if this.image}}
-              <img
-                class="img-fluid"
-                src="{{this.image}}"
-                alt="product categorie"
-              />
+                <img
+                  class="img-fluid"
+                  src="{{this.image}}"
+                  alt="product categorie"
+                />
               {{/if}}
-              <h6 class="cat-title">{{this.title}}</h6>
+              <h6 class="cat-title">{{this.name}}</h6>
             </a>
           </div>
           <!-- End .categrie-product -->
@@ -33,21 +33,23 @@
   <div class="container">
     <div class="slider-box-wrap">
       <div class="slider-activation-two axil-slick-dots">
-        {{#each home_slider_constants}}
+        {{#each banners}}
           <div class="single-slide slick-slide">
             <div class="main-slider-content">
               <span class="subtitle"><i class="fas fa-fire"></i> </span>
-              <h2 class="title">{{this.title}}</h2>
+              <h2 class="title">{{this.name}}</h2>
+              {{#if link}}
               <div class="shop-btn">
-                <a href="{{getPhoneUrl}}" class="axil-btn btn-bg-white">
+                <a href="{{link}}" class="axil-btn btn-bg-white">
                   {{! <i
                     class="fal fa-shopping-cart"
                   ></i> }}
                   Detaylı</a>
               </div>
+              {{/if}}
             </div>
             <div class="main-slider-thumb">
-              <img src="{{this.image}}" alt="Product" />
+              <img src="{{mainImageId}}" alt="Product" />
             </div>
           </div>
         {{/each}}
@@ -59,7 +61,7 @@
 <!-- End Slider Area -->
 
 <!-- Start Flash Sale Area  -->
-{{!-- <div
+{{! <div
   class="axil-new-arrivals-product-area fullwidth-container flash-sale-area bg-color-white axil-section-gap pb--0"
 >
   <div class="container ml--xxl-0">
@@ -400,7 +402,7 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End Flash Sale Area  -->
 
 <div class="axil-product-area axil-section-gap pb--0">
@@ -426,10 +428,12 @@
                   </a>
                 </div>
                 <div class="inner">
-                  <h5 class="title"><a href="/single-product/{{slug}}">{{name}}</a></h5>
+                  <h5 class="title"><a
+                      href="/single-product/{{slug}}"
+                    >{{name}}</a></h5>
                   <div class="product-price-variant">
                     <span class="price current-price">{{price}}AZN</span>
-                    {{!-- <span class="price old-price">$49.99</span> --}}
+                    {{! <span class="price old-price">$49.99</span> }}
                   </div>
                   <div class="product-rating">
                     <span class="icon">
@@ -439,7 +443,7 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                     </span>
-                    {{!-- <span class="rating-number">(64)</span> --}}
+                    {{! <span class="rating-number">(64)</span> }}
                   </div>
                 </div>
               </div>
@@ -479,25 +483,33 @@
             <div class="about-features">
               <div class="spam sl-number">1.</div>
               <h4 class="title">Biz kimik</h4>
-              <p>ASI Rent A Car 2020 ci ildən etibarən avtomobil icarəsi xidmətini göstərən və bu illər ərzində müştərilərini həmişə razı saxlayan bir şirkətdir</p>
+              <p>RUM Rent A Car 2020 ci ildən etibarən avtomobil icarəsi
+                xidmətini göstərən və bu illər ərzində müştərilərini həmişə razı
+                saxlayan bir şirkətdir</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="about-features">
               <div class="spam sl-number">2.</div>
               <h4 class="title">Xidmətlərimiz</h4>
-              <p>Biz sizi rahat,lazımsız sual və öhdəliksiz bir səyahət ilə təmin edirik. Yeni, rahat və tam sığortalı avtomobil icarə etmək istəyirsiniz?ASI Rent A Car size gözləyir. Bizim müştərilərimizdən gələn onlarla xoş rəylər bizim işimiz haqqında sizə əlavə informasiya verməkdə kömək olacaq.</p>
+              <p>Biz sizi rahat,lazımsız sual və öhdəliksiz bir səyahət ilə
+                təmin edirik. Yeni, rahat və tam sığortalı avtomobil icarə etmək
+                istəyirsiniz?RUM Rent A Car size gözləyir. Bizim
+                müştərilərimizdən gələn onlarla xoş rəylər bizim işimiz haqqında
+                sizə əlavə informasiya verməkdə kömək olacaq.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="about-features">
               <div class="spam sl-number">3.</div>
               <h4 class="title">Onlayn sifariş</h4>
-              <p>Biz sizin vaxtınıza qənaət edəcək və sizə lazım olan avtomobili seçməkdə köməkçi ola biləcək
-çox rahat onlayn sifariş sistemini tədbiq etdik. Cəmi bir neçə addıma rahatlıqla seçiminizi edin </p>
+              <p>Biz sizin vaxtınıza qənaət edəcək və sizə lazım olan avtomobili
+                seçməkdə köməkçi ola biləcək çox rahat onlayn sifariş sistemini
+                tədbiq etdik. Cəmi bir neçə addıma rahatlıqla seçiminizi edin
+              </p>
             </div>
           </div>
-         
+
         </div>
       </div>
       <div class="col-lg-5">
@@ -527,7 +539,7 @@
 </div>
 
 <!-- Start Best Sellers Product Area  -->
-{{!-- <div
+{{! <div
   class="axil-best-seller-product-area bg-color-white axil-section-gap pb--50 pb_sm--30"
 >
   <div class="container">
@@ -972,11 +984,11 @@
       <!-- End .slick-single-layout -->
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End  Best Sellers Product Area  -->
 
 <!-- Poster Countdown Area  -->
-{{!-- <div class="axil-poster-countdown">
+{{! <div class="axil-poster-countdown">
   <div class="container">
     <div class="poster-countdown-wrap bg-lighter">
       <div class="row">
@@ -1006,11 +1018,11 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End Poster Countdown Area  -->
 
 <!-- Start Expolre Product Area  -->
-{{!-- <div class="axil-product-area bg-color-white axil-section-gap pb--0">
+{{! <div class="axil-product-area bg-color-white axil-section-gap pb--0">
   <div class="container">
     <div class="product-area pb--80">
       <div class="section-title-wrapper">
@@ -1867,11 +1879,11 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End Expolre Product Area  -->
 
 <!-- Start Why Choose Area  -->
-{{!-- <div class="axil-why-choose-area axil-section-gap pb--50 pb_sm--30">
+{{! <div class="axil-why-choose-area axil-section-gap pb--50 pb_sm--30">
   <div class="container">
     <div class="section-title-wrapper section-title-center">
       <span class="title-highlighter highlighter-secondary"><i
@@ -1924,11 +1936,11 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End Why Choose Area  -->
 
 <!-- Start Testimonila Area  -->
-{{!-- <div class="axil-testimoial-area axil-section-gap bg-vista-white">
+{{! <div class="axil-testimoial-area axil-section-gap bg-vista-white">
   <div class="container">
     <div class="section-title-wrapper">
       <span class="title-highlighter highlighter-secondary">
@@ -2026,11 +2038,11 @@
 
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End Testimonila Area  -->
 
 <!-- Start New Arrivals Product Area  -->
-{{!-- <div
+{{! <div
   class="axil-new-arrivals-product-area bg-color-white axil-section-gap pb--50 pb_sm--30"
 >
   <div class="container">
@@ -2502,10 +2514,10 @@
       <!-- End .slick-single-layout -->
     </div>
   </div>
-</div> --}}
+</div> }}
 <!-- End New Arrivals Product Area  -->
 
-{{!-- 
+{{! 
 <div class="service-area">
   <div class="container">
     <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
@@ -2555,4 +2567,4 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> }}

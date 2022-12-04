@@ -66,18 +66,17 @@
                                 </a>
                             </div>
                             <ul class="mainmenu">
-                                {{!-- <li class="menu-item-has-children">
-                                    <a href="#">Home</a>
+                                <li><a href="/index">Ana səhifə</a></li>
+
+                                 <li class="menu-item-has-children">
+                                    <a href="/products">Avtomobillər</a>
                                     <ul class="axil-submenu">
-                                        <li><a href="index-1">Home - Electronics</a></li>
-                                        <li><a href="index-2">Home - NFT</a></li>
-                                        <li><a href="index-3">Home - Fashion</a></li>
-                                        <li><a href="index-4">Home - Jewellery</a></li>
-                                        <li><a href="index-5">Home - Furniture</a></li>
-                                        <li><a href="index-6">Home - Multipurpose</a></li>
+                                        {{#each  getCategories}}
+                                        <li><a href="/products?type={{slug}}">{{name}}</a></li>
+                                        {{/each}}
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children">
+                                {{!--<li class="menu-item-has-children">
                                     <a href="#">Shop</a>
                                     <ul class="axil-submenu">
                                         <li><a href="shop-sidebar">Shop With Sidebar</a></li>
@@ -121,7 +120,6 @@
                                         <li><a href="blog-quote">Quote Post</a></li>
                                     </ul>
                                 </li> --}}
-                                <li><a href="/index">Ana səhifə</a></li>
                                 <li><a href="/contact">Əlaqə</a></li>
                                 {{!-- <li><a href="contact">Contact</a></li> --}}
                             </ul>
@@ -136,11 +134,11 @@
                                     <i class="flaticon-magnifying-glass"></i>
                                 </button>
                             </li> --}}
-                            <li class="axil-search d-xl-none d-block">
+                            {{!-- <li class="axil-search d-xl-none d-block">
                                 <a href="javascript:void(0)" class="header-search-icon" title="Search">
                                     <i class="flaticon-magnifying-glass"></i>
                                 </a>
-                            </li>
+                            </li> --}}
                             {{!-- <li class="wishlist">
                                 <a href="wishlist">
                                     <i class="flaticon-heart"></i>
@@ -187,7 +185,7 @@
             </div>
         </div>
         <!-- End Mainmenu Area -->
-        <div class="header-top-campaign">
+        {{!-- <div class="header-top-campaign">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-10">
@@ -206,6 +204,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </header>
     <!-- End Header -->

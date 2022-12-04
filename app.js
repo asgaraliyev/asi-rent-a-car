@@ -5,10 +5,14 @@ import cookieParser from "cookie-parser"
 import logger from "morgan"
 import hbs from "express-handlebars"
 import indexRouter from "./routes/index.js"
+import productsRouter from "./routes/products.js"
 import singleProductRouter from "./routes/single_product.js"
-import contactRouter from "./routes/contact.js"
+// import contactRouter  from "./routes/contact.js"
 import { dirname } from 'path';
-import main_constant from "./helpers/constants/main_constant.js"
+import { registerHelpers } from "./helpers/constants/main_constant.js"
+
+
+
 function getPath(dir){
   if(dir){
     return path.resolve(dirname(`./`),`${dir}`)
@@ -22,17 +26,7 @@ app.engine(
     defaultLayout: "main",
     layoutDir: path.join(getPath("views/layouts")),
     partialsDir: path.join(getPath("views/partials")),
-    helpers:{
-      getPhoneUrl(){
-        return `tel:${main_constant.phone}`
-      },
-      getLogo(){
-        return main_constant.logo
-      },
-      getMain(){
-        return JSON.stringify(main_constant)
-      }
-    }
+    
   })
 );
 app.set("views",getPath("views"));
@@ -46,8 +40,9 @@ app.use(express.static(getPath("public")));
 
 app.use("/", indexRouter);
 app.use("/index", indexRouter);
+app.use("/products", productsRouter);
 app.use("/single-product", singleProductRouter);
-app.use("/contact", contactRouter);
+// app.use("/contact", contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -55,16 +50,17 @@ app.use(function (req, res, next) {
 });
 
 // error handler
-app.use(function (err, req, res, next) {
+app.use(async function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
 
   // render the error page
   res.status(err.status || 500);
-  res.render("error");
+  const helpers=await registerHelpers()
+  res.render("error",{...helpers});
 });
-const PORT = 3131 || process.env.PORT;
+const PORT = 4000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log("running on http://localhost:" + PORT);
 });

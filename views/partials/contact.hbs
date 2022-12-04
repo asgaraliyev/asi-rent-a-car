@@ -67,9 +67,9 @@
                         <div class="col-lg-4">
                             <div class="contact-location mb--40">
                                 <h4 class="title mb--20">Bizim ofisimiz</h4>
-                                <span class="address mb--20">Ziya Bünyadov pr 5, Bakı</span>
-                                <span class="phone">Tel: <a href="tel:+994 51 771 11 11">+994 51 771 11 11</a></span>
-                                <span class="email">E-poçt: <a href="mailto:asirentacarasi@gmail.com">asirentacarasi@gmail.com</a></span>
+                                <span class="address mb--20">{{getAddress}}</span>
+                                <span class="phone">Tel: <a href="tel:{{getPhone}}">{{getPhone}}</a></span>
+                                <span class="email">E-poçt: <a href="mailto:{{getMail}}">{{getMail}}</a></span>
                             </div>
                             {{!-- <div class="contact-career mb--40">
                                 <h4 class="title mb--20">Careers</h4>
@@ -86,7 +86,7 @@
                 <div class="axil-google-map-wrap axil-section-gap pb--0">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                            <iframe width="1080" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12151.515610293418!2d49.8373136!3d40.4115334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbcbb8b31d8979443!2sAS%C4%B0%20Rent%20a%20Car!5e0!3m2!1sen!2s!4v1667731807915!5m2!1sen!2s" ></iframe>
+                            <iframe width="1080" height="500" id="gmap_canvas" src="{{getMapSrc}}" ></iframe>
                         </div>
                     </div>
                 </div>
