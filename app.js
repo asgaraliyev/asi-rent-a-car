@@ -1,6 +1,5 @@
-import express from "express"
 import  createError from "http-errors"
-
+import express from "express"
 import path from "path"
 import cookieParser from "cookie-parser"
 import logger from "morgan"
@@ -63,10 +62,6 @@ app.use(async function (err, req, res, next) {
 });
 const PORT = 4000 || process.env.PORT;
 app.listen(PORT, () => {
-  console.log(process.env)
-  console.log("ENV PORT",process.env.PORT)
-  console.log("api_url",process.env.api_url)
-  console.log("NODE_ENV",process.env.NODE_ENV)
   console.log("running on http://localhost:" + PORT);
 });
 export default app;
