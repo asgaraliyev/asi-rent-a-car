@@ -6157,6 +6157,7 @@ button.axil-btn.wishlist-btn:hover:before {
 .axil-mainmenu .header-navbar {
   display: flex;
   align-items: center;
+  
   width: 100%;
 }
 .axil-mainmenu .header-navbar .header-main-nav {
@@ -6168,13 +6169,16 @@ button.axil-btn.wishlist-btn:hover:before {
     margin: 0;
   }
 }
+.axil-mainmenu{
+  background-color: var(--color-black);
+}
 .axil-mainmenu.axil-sticky {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 5;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
@@ -17100,10 +17104,12 @@ body.open .closeMask {
 
 #whatsapp{
   position: fixed;
-  right: 24px;
-  bottom: 90px;
+  bottom: 100px;
+  right: 40px;
+  opacity: 1;
+  transform: scale(1);
   display: block;
   z-index: asd;
-  width: 70px;
+  width: 45px;
   cursor: pointer;
 }

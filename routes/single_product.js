@@ -12,7 +12,7 @@ router.get("/:slug", async function (req, res, next) {
     res.redirect("/contact");
     return;
   }
-  console.log("product", product);
+
   const otherProducts = products.filter((p) => p._id !== product._id);
   const helpers=await registerHelpers()
   res.render("single_product", {
