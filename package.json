@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js NODE_ENV=api_url=http://46.101.115.120:3000/",
     "dev": "nodemon app.js"
   },
   "dependencies": {
