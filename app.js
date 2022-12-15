@@ -64,6 +64,7 @@ app.use(async function (err, req, res, next) {
 const PORT = 4000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log("ENV PORT",process.env.PORT)
+  console.log("ENV PORT",process.env.api_url)
   console.log("running on http://localhost:" + PORT);
 });
 export default app;
