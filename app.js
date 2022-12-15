@@ -63,8 +63,10 @@ app.use(async function (err, req, res, next) {
 });
 const PORT = 4000 || process.env.PORT;
 app.listen(PORT, () => {
+  console.log(process.env)
   console.log("ENV PORT",process.env.PORT)
-  console.log("ENV PORT",process.env.api_url)
+  console.log("api_url",process.env.api_url)
+  console.log("NODE_ENV",process.env.NODE_ENV)
   console.log("running on http://localhost:" + PORT);
 });
 export default app;
