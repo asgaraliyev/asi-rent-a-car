@@ -4802,7 +4802,7 @@ button.axil-btn.wishlist-btn:hover:before {
   flex: 1;
 }
 .main-slider-style-5 .main-slider-content .title {
-  width: 70%;
+  width: 100%;
 }
 @media only screen and (max-width: 1399px) {
   .main-slider-style-5 .main-slider-content .title {
@@ -4865,7 +4865,7 @@ button.axil-btn.wishlist-btn:hover:before {
 }
 .main-slider-style-6 .main-slider-content .title {
   margin-bottom: 40px;
-  font-size: 70px;
+  font-size: 35px;
   line-height: 1.1;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -7546,7 +7546,7 @@ button.axil-btn.wishlist-btn:hover:before {
   transition: 0.5s;
 }
 .mainmenu > li > a:hover {
-  color: var(--color-black);
+  color: var(--light-primary);
 }
 .mainmenu > li > a:hover::before {
   opacity: 1;
@@ -17109,13 +17109,16 @@ body.open .closeMask {
   opacity: 1;
   transform: scale(1);
   display: block;
-  z-index: asd;
   width: 45px;
+  z-index: 3;
   cursor: pointer;
 }
 @media only screen and (max-width: 575px){
   #whatsapp {
-    bottom: 10px;
+    bottom: 60px;
     right: 10px;
 }
+}
+#category-tabs .category-item{
+  padding: 10px 25px!important;
 }

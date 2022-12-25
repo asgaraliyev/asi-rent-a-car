@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://rumrentacar.az</loc>
+		<lastmod>2022-12-1</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.rumrentacar.az/index</loc>
+		<lastmod>2022-12-1</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.rumrentacar.az/products</loc>
+		<lastmod>2022-12-1</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.rumrentacar.az/contact</loc>
+		<lastmod>2022-12-1</lastmod>
+		<priority>0.5</priority>
+	</url>
+	
+</urlset>

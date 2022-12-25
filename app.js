@@ -7,7 +7,7 @@ import hbs from "express-handlebars"
 import indexRouter from "./routes/index.js"
 import productsRouter from "./routes/products.js"
 import singleProductRouter from "./routes/single_product.js"
-// import contactRouter  from "./routes/contact.js"
+import contactRouter  from "./routes/contact.js"
 import { dirname } from 'path';
 import { registerHelpers } from "./helpers/constants/main_constant.js"
 
@@ -42,7 +42,7 @@ app.use("/", indexRouter);
 app.use("/index", indexRouter);
 app.use("/products", productsRouter);
 app.use("/single-product", singleProductRouter);
-// app.use("/contact", contactRouter);
+app.use("/contact", contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

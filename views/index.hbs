@@ -1,13 +1,13 @@
 <!-- Start Categorie Area  -->
-<div class="axil-categorie-area pt--30 bg-color-white">
+<div class="axil-categorie-area pt--30 bg-color-white" id="category-tabs">
   <div class="container">
     <div
       class="categrie-product-activation-2 categorie-product-two slick-layout-wrapper--15"
     >
       {{#each getCategories}}
         <div class="slick-single-layout slick-slide">
-          <div class="categrie-product-2">
-            <a href="/products?type={{this.slug}}">
+          <div class="categrie-product-2 ">
+            <a href="/products?type={{this.slug}}" class="category-item">
               {{#if this.image}}
                 <img
                   class="img-fluid"
@@ -44,7 +44,7 @@
                   {{! <i
                     class="fal fa-shopping-cart"
                   ></i> }}
-                  Detaylı</a>
+                  Ətraflı</a>
               </div>
               {{/if}}
             </div>
@@ -423,7 +423,7 @@
             <div class="axil-product product-style-seven">
               <div class="product-content">
                 <div class="cart-btn">
-                  <a href="{{getPhoneUrl}}">
+                  <a href="{{../getPhoneUrl}}">
                     <i class="fa fa-phone"></i>
                   </a>
                 </div>
