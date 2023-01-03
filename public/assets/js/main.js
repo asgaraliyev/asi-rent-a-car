@@ -998,6 +998,10 @@
             message:e.target.message.value.trim(),
         }
         const rawResponse = await fetch(main_constant.api_url+`/new-request?data=${JSON.stringify(data)}`);
-        console.log(rawResponse)
+        if(rawResponse){
+            alert("Mesajınız uğurla göndərildi.Ən yaxın zamanda sizinlə əlaqə saxlanılacaqdır.")
+        }else{
+            alert("Problem yaşandı")
+        }
     })
 })(window, document, jQuery);
