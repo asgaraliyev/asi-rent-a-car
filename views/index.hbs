@@ -490,7 +490,8 @@
             <div class="about-features">
               <div class="spam sl-number">2.</div>
               <h4 class="title">Xidmətlərimiz</h4>
-              <p>Biz sizi rahat, lazımsız sual və öhdəliksiz bir səyahət etmək üçün avtomobillər ilə təmin edirik. Yeni, rahat və tam kasko sığortalı avtomobil icarə etmək istəyirsinizsə RUM Rent A Car sizi gözləyir. Bİz müştəriləri hər növ avtomobillərlə təmin edirik, ekonom, biznes klass, SUV, Yolsuzluq, ecoloji təmiz (ecogreen), sport və antik avtomobillıərlə temin edirik, Bizdə həmçinin toy avtomobilləri, sürücü ilə avtomobil xidməti də mövcuddur. Əlavə olaraq şirkətlər üçün uzun müddətli icarəlerdə istədikləri avtomobili alib təhvil veririk. Bizim müştərilərimizdən gələn onlarla xoş rəylər bizim işimiz haqqında sizə əlavə informasiya verməkdə kömək olacaq.</p>
+              <p>Biz sizi rahat, lazımsız sual və öhdəliksiz bir səyahət etmək üçün avtomobillər ilə təmin edirik. Yeni, rahat və tam kasko sığortalı avtomobil icarə etmək istəyirsinizsə RUM Rent A Car sizi gözləyir. Bİz müştəriləri hər növ avtomobillərlə təmin edirik, ekonom, biznes klass, SUV, Yolsuzluq, ecoloji təmiz (ecogreen), sport və antik avtomobillərlə<span id="moreinfo" style="display: none;"> temin edirik, Bizdə həmçinin toy avtomobilləri, sürücü ilə avtomobil xidməti də mövcuddur. Əlavə olaraq şirkətlər üçün uzun müddətli icarəlerdə istədikləri avtomobili alib təhvil veririk. Bizim müştərilərimizdən gələn onlarla xoş rəylər bizim işimiz haqqında sizə əlavə informasiya verməkdə kömək olacaq.</span></p>
+              <button id="readMore" onclick="readMore()">Daha etrafli</button>
             </div>
           </div>
           <div class="col-sm-6">
@@ -2560,3 +2561,18 @@
     </div>
   </div>
 </div> }}
+
+<script>
+    const moreInfo = document.getElementById("moreinfo")
+    const readMoreButton = document.getElementById("readMore")
+    function readMore(){
+      if(moreInfo.style.display === "none"){
+        moreInfo.style.display = "inline"
+        readMoreButton.innerText = "Daha az"
+      }
+      else{
+        moreInfo.style.display = "none"
+        readMoreButton.innerText = "Daha etrafli"
+      }
+    }
+</script>
