@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js NODE_ENV=api_url http://46.101.115.120:3000/",
     "dev": "nodemon app.js",
-    "ssh":"ssh root@84.46.246.156"
+    "ssh": "ssh root@84.46.246.156"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
