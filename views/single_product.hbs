@@ -1,7 +1,5 @@
 <div class="axil-single-product-area bg-color-white">
-  <div
-    class="single-product-thumb axil-section-gap pb--20 pb_sm--0 bg-vista-white"
-  >
+  <div class="single-product-thumb axil-section-gap pb--20 pb_sm--0 bg-vista-white">
     <div class="container">
       <div class="row row--25">
         <div class="col-lg-6 mb--40">
@@ -9,19 +7,13 @@
             <div class="position-sticky sticky-top">
               <div class="row row--10">
                 {{#each product.imageIds}}
-                  <div class="col-6 mb--20">
-                    <div
-                      class="single-product-thumbnail axil-product thumbnail-grid"
-                    >
-                      <div class="thumbnail">
-                        <img
-                          class="img-fluid"
-                          src="{{this}}"
-                          alt="Product Images"
-                        />
-                      </div>
+                <div class="col-6 mb--20">
+                  <div class="single-product-thumbnail axil-product thumbnail-grid">
+                    <div class="thumbnail">
+                      <img class="img-fluid" src="{{this}}" alt="Product Images" />
                     </div>
                   </div>
+                </div>
                 {{/each}}
               </div>
             </div>
@@ -60,17 +52,11 @@
                       <h6 class="title">Colors:</h6>
                       <div class="color-variant-wrapper">
                         <ul class="color-variant">
-                          <li class="color-extra-01 active"><span><span
-                                class="color"
-                              ></span></span>
+                          <li class="color-extra-01 active"><span><span class="color"></span></span>
                           </li>
-                          <li class="color-extra-02"><span><span
-                                class="color"
-                              ></span></span>
+                          <li class="color-extra-02"><span><span class="color"></span></span>
                           </li>
-                          <li class="color-extra-03"><span><span
-                                class="color"
-                              ></span></span>
+                          <li class="color-extra-03"><span><span class="color"></span></span>
                           </li>
                         </ul>
                       </div>
@@ -95,32 +81,23 @@
                   <!-- Start Product Action Wrapper  -->
                   <div class="product-action-wrapper d-flex-center">
                     <!-- Start Quentity Action  -->
-                    {{! <div class="pro-qty mr--20"><input
-                        type="text"
-                        value="1"
-                      /></div> }}
+                    {{! <div class="pro-qty mr--20"><input type="text" value="1" /></div> }}
                     <!-- End Quentity Action  -->
 
                     <!-- Start Product Action  -->
                     <ul class="product-action d-flex-center mb--0">
-                      <li class="add-to-cart"><a
-                          href="{{getPhoneUrl}}"
-                          class="axil-btn btn-bg-primary"
-                        >Əlaqə saxla</a></li>
-                      {{! <li class="wishlist"><a
-                          href="wishlist"
-                          class="axil-btn wishlist-btn"
-                        ><i class="far fa-heart"></i></a></li> }}
+                      <li class="add-to-cart"><a href="{{getPhoneUrl}}" class="axil-btn btn-bg-primary">Əlaqə saxla</a>
+                      </li>
+                      {{! <li class="wishlist"><a href="wishlist" class="axil-btn wishlist-btn"><i
+                            class="far fa-heart"></i></a></li> }}
                     </ul>
                     <!-- End Product Action  -->
 
                   </div>
                   <!-- End Product Action Wrapper  -->
-                  {{! 
+                  {{!
                   <div class="product-desc-wrapper pt--80 pt_sm--60">
-                    <h4
-                      class="primary-color mb--40 desc-heading"
-                    >Description</h4>
+                    <h4 class="primary-color mb--40 desc-heading">Description</h4>
                     <div class="single-desc mb--30">
                       <h5 class="title">Specifications:</h5>
                       <p>We’ve created a full-stack structure for our working
@@ -138,28 +115,19 @@
                     <ul class="pro-des-features pro-desc-style-two">
                       <li class="single-features">
                         <div class="icon">
-                          <img
-                            src="/assets/images/product/product-thumb/icon-3.png"
-                            alt="icon"
-                          />
+                          <img src="/assets/images/product/product-thumb/icon-3.png" alt="icon" />
                         </div>
                         Easy Returns
                       </li>
                       <li class="single-features">
                         <div class="icon">
-                          <img
-                            src="/assets/images/product/product-thumb/icon-2.png"
-                            alt="icon"
-                          />
+                          <img src="/assets/images/product/product-thumb/icon-2.png" alt="icon" />
                         </div>
                         Quality Service
                       </li>
                       <li class="single-features">
                         <div class="icon">
-                          <img
-                            src="/assets/images/product/product-thumb/icon-1.png"
-                            alt="icon"
-                          />
+                          <img src="/assets/images/product/product-thumb/icon-1.png" alt="icon" />
                         </div>
                         Original Product
                       </li>
@@ -184,40 +152,23 @@
   <div class="container">
     <ul class="nav tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a
-          id="additional-info-tab"
-          data-bs-toggle="tab"
-          class="active"
-          href="#additional-info"
-          role="tab"
-          aria-controls="additional-info"
-          aria-selected="true"
-        >Avtomobilin xüsusiyyətləri </a>
+        <a id="additional-info-tab" data-bs-toggle="tab" class="active" href="#additional-info" role="tab"
+          aria-controls="additional-info" aria-selected="true">Avtomobilin xüsusiyyətləri </a>
       </li>
       {{! <li class="nav-item" role="presentation">
-        <a
-          id="reviews-tab"
-          data-bs-toggle="tab"
-          href="#reviews"
-          role="tab"
-          aria-controls="reviews"
-          aria-selected="false"
-        >Reviews</a>
+        <a id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
+          aria-selected="false">Reviews</a>
       </li> }}
     </ul>
     <div class="tab-content" id="myTabContent">
 
-      <div
-        class="tab-pane fade show active"
-        id="additional-info"
-        role="tabpanel"
-        aria-labelledby="additional-info-tab"
-      >
+      <div class="tab-pane fade show active" id="additional-info" role="tabpanel" aria-labelledby="additional-info-tab">
         <div class="product-additional-info">
+
           <div class="table-responsive">
             <table>
               <tbody>
-                {{#each  product.propeties}}
+                {{#each product.propeties}}
                 <tr>
                   <th>{{key}}</th>
                   <td>{{value}}</td>
@@ -226,14 +177,10 @@
               </tbody>
             </table>
           </div>
+
         </div>
       </div>
-      {{! <div
-        class="tab-pane fade"
-        id="reviews"
-        role="tabpanel"
-        aria-labelledby="reviews-tab"
-      >
+      {{! <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
         <div class="reviews-wrapper">
           <div class="row">
             <div class="col-lg-6 mb--40">
@@ -245,10 +192,7 @@
                     <div class="comment-body">
                       <div class="single-comment">
                         <div class="comment-img">
-                          <img
-                            src="./assets/images/blog/author-image-4.png"
-                            alt="Author Images"
-                          />
+                          <img src="./assets/images/blog/author-image-4.png" alt="Author Images" />
                         </div>
                         <div class="comment-inner">
                           <h6 class="commenter">
@@ -263,9 +207,7 @@
                               <a href="#"><i class="fas fa-star"></i></a>
                               <a href="#"><i class="fas fa-star"></i></a>
                               <a href="#"><i class="fas fa-star"></i></a>
-                              <a href="#"><i
-                                  class="fas fa-star empty-rating"
-                                ></i></a>
+                              <a href="#"><i class="fas fa-star empty-rating"></i></a>
                             </span>
                           </h6>
                           <div class="comment-text">
@@ -286,10 +228,7 @@
                     <div class="comment-body">
                       <div class="single-comment">
                         <div class="comment-img">
-                          <img
-                            src="./assets/images/blog/author-image-4.png"
-                            alt="Author Images"
-                          />
+                          <img src="./assets/images/blog/author-image-4.png" alt="Author Images" />
                         </div>
                         <div class="comment-inner">
                           <h6 class="commenter">
@@ -323,10 +262,7 @@
                     <div class="comment-body">
                       <div class="single-comment">
                         <div class="comment-img">
-                          <img
-                            src="./assets/images/blog/author-image-5.png"
-                            alt="Author Images"
-                          />
+                          <img src="./assets/images/blog/author-image-5.png" alt="Author Images" />
                         </div>
                         <div class="comment-inner">
                           <h6 class="commenter">
@@ -383,10 +319,7 @@
                     <div class="col-12">
                       <div class="form-group">
                         <label>Other Notes (optional)</label>
-                        <textarea
-                          name="message"
-                          placeholder="Your Comment"
-                        ></textarea>
+                        <textarea name="message" placeholder="Your Comment"></textarea>
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
@@ -403,11 +336,7 @@
                     </div>
                     <div class="col-lg-12">
                       <div class="form-submit">
-                        <button
-                          type="submit"
-                          id="submit"
-                          class="axil-btn btn-bg-primary w-auto"
-                        >Submit Comment</button>
+                        <button type="submit" id="submit" class="axil-btn btn-bg-primary w-auto">Submit Comment</button>
                       </div>
                     </div>
                   </div>
@@ -421,74 +350,85 @@
       </div> }}
     </div>
   </div>
+    <div class="container">
+          <ul class="nav tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a id="additional-info-tab" data-bs-toggle="tab" class="active" href="#additional-info" role="tab"
+            aria-controls="additional-info" aria-selected="true">Avtomobilin qiymətləri </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="additional-info" role="tabpanel" aria-labelledby="additional-info-tab">
+              <div class="product-additional-info">
+
+                <div class="table-responsive">
+                  <table>
+                    <tbody>
+                      {{#each product.prices_by_days}}
+                      <tr>
+                        <th>{{days}} <span style="text-transform: lowercase">gün</span></th>
+                        <td>{{price}} <span>₼</span></td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+    </div>
 </div>
 
 <!-- Start Recently Viewed Product Area  -->
 <div class="axil-product-area bg-color-white axil-section-gap pb--50 pb_sm--30">
   <div class="container">
     <div class="section-title-wrapper">
-      <span class="title-highlighter highlighter-primary"><i
-          class="fa fa-car"
-        ></i>
+      <span class="title-highlighter highlighter-primary"><i class="fa fa-car"></i>
         Avtomobillər</span>
       <h2 class="title">Digər avtomobillərimiz</h2>
     </div>
-    <div
-      class="recent-product-activation slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide"
-    >
+    <div class="recent-product-activation slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
       {{#each otherProducts}}
-        <div class="slick-single-layout">
-          <div class="axil-product">
-            <div class="thumbnail">
-              <a href="/single-product/{{this.slug}}">
-                <img
-                  src="{{this.mainImageId}}"
-                  alt="Product Images"
-                />
-              </a>
-              {{!-- <div class="label-block label-right">
-                <div class="product-badget">20% OFF</div>
-              </div> --}}
-              <div class="product-hover-action">
-                <ul class="cart-action">
-                  {{!-- <li class="wishlist"><a href="wishlist"><i
-                        class="far fa-heart"
-                      ></i></a></li> --}}
-                  <li class="select-option"><a href="{{getPhoneUrl}}">Əlaqə saxla</a></li>
-                  {{!-- <li class="quickview"><a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#quick-view-modal"
-                    ><i class="far fa-eye"></i></a></li> --}}
-                </ul>
-              </div>
+      <div class="slick-single-layout">
+        <div class="axil-product">
+          <div class="thumbnail">
+            <a href="/single-product/{{this.slug}}">
+              <img src="{{this.mainImageId}}" alt="Product Images" />
+            </a>
+            {{!-- <div class="label-block label-right">
+              <div class="product-badget">20% OFF</div>
+            </div> --}}
+            <div class="product-hover-action">
+              <ul class="cart-action">
+                {{!-- <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li> --}}
+                <li class="select-option"><a href="{{getPhoneUrl}}">Əlaqə saxla</a></li>
+                {{!-- <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i
+                      class="far fa-eye"></i></a></li> --}}
+              </ul>
             </div>
-            <div class="product-content">
-              <div class="inner">
-                <h5 class="title"><a href="/single-product/{{this.slug}}">{{this.title}}</a></h5>
-                <div class="product-price-variant">
-                  <span class="price current-price">{{this.price}} AZN</span>
-                </div>
-                {{!-- <div class="color-variant-wrapper">
-                  <ul class="color-variant">
-                    <li class="color-extra-01 active"><span><span
-                          class="color"
-                        ></span></span>
-                    </li>
-                    <li class="color-extra-02"><span><span
-                          class="color"
-                        ></span></span>
-                    </li>
-                    <li class="color-extra-03"><span><span
-                          class="color"
-                        ></span></span>
-                    </li>
-                  </ul>
-                </div> --}}
+          </div>
+          <div class="product-content">
+            <div class="inner">
+              <h5 class="title"><a href="/single-product/{{this.slug}}">{{this.title}}</a></h5>
+              <div class="product-price-variant">
+                <span class="price current-price">{{this.price}} AZN</span>
               </div>
+              {{!-- <div class="color-variant-wrapper">
+                <ul class="color-variant">
+                  <li class="color-extra-01 active"><span><span class="color"></span></span>
+                  </li>
+                  <li class="color-extra-02"><span><span class="color"></span></span>
+                  </li>
+                  <li class="color-extra-03"><span><span class="color"></span></span>
+                  </li>
+                </ul>
+              </div> --}}
             </div>
           </div>
         </div>
+      </div>
 
       {{/each}}
 
@@ -503,9 +443,7 @@
   <div class="container">
     <div class="etrade-newsletter-wrapper bg_image bg_image--5">
       <div class="newsletter-content">
-        <span class="title-highlighter highlighter-primary2"><i
-            class="fas fa-envelope-open"
-          ></i>Newsletter</span>
+        <span class="title-highlighter highlighter-primary2"><i class="fas fa-envelope-open"></i>Newsletter</span>
         <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
         <div class="input-group newsletter-form">
           <div class="position-relative newsletter-inner mb--15">
